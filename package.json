@@ -1,0 +1,23 @@
+{
+  "name": "mattrmay.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss build /src/css/tailwind.src.css -o /docs/assets/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattrmay/mattrmay.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattrmay/mattrmay.github.io/issues"
+  },
+  "homepage": "https://github.com/mattrmay/mattrmay.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.2"
+  }
+}
