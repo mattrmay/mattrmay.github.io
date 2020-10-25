@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container mx-auto max-w-6xl">
+  <div id="app" class="container mx-auto max-w-6xl px-8 xl:px-0">
     <Header />
   </div>
 </template>
