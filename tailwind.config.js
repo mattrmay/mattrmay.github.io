@@ -1,12 +1,8 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
-  theme: {
-    extend: {},
-  },
+  purge: [
+    './src/**/*.vue'
+  ],
+  theme: {},
   variants: {},
   plugins: [],
 }
