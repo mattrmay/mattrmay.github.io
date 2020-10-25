@@ -1,5 +1,5 @@
 <template>
-  <div class="header pt-8 text-gray-900">
+  <div class="header flex-none block pt-8 text-gray-900">
     <div class="sm:flex justify-between">
       <h1 class="text-3xl sm:text-2xl"><a href="#">Matthew May</a></h1>
       <button @click="menuOpen = !menuOpen" class="sm:hidden absolute top-0 right-0 mt-8 mr-8">
