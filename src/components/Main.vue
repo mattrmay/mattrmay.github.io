@@ -1,8 +1,6 @@
 <template>
   <div class="flex-grow">
-    <div class="h-full flex items-center">
-      <router-view></router-view>
-    </div>
+    <router-view />
   </div>
 </template>
 
