@@ -7,10 +7,9 @@
         </svg>
         </button>
         <nav :class="menuOpen ? 'block' : 'hidden'" class="absolute left-0 w-full bg-white sm:bg-none sm:relative sm:block mt-4 pt-4 pb-8 sm:mt-0 sm:pt-2 sm:pb-0 sm:flex sm:space-x-6 space-y-4 sm:space-y-0 sm:items-center text-2xl sm:text-base tracking-wide text-center sm:text-left shadow-md sm:shadow-none">
-            <router-link to="/about" class="block">About</router-link>
-            <router-link to="/updates" class="block">Updates</router-link>
-            <router-link to="/projects" class="block">Projects</router-link>
-            <router-link to="/contact" class="block">Contact</router-link>
+            <router-link v-for="route in $router.options.routes" :key="route.path" :to="route.path">
+              {{route.name}}
+            </router-link>
         </nav>
     </div>
 </template>
