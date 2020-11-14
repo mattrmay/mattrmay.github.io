@@ -6,8 +6,8 @@
             <path v-if="menuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
         </button>
-        <nav :class="menuOpen ? 'block' : 'hidden'" class="absolute left-0 w-full bg-white sm:bg-none sm:relative sm:block mt-4 pt-4 pb-8 sm:mt-0 sm:pt-2 sm:pb-0 sm:flex sm:space-x-6 space-y-4 sm:space-y-0 sm:items-center text-2xl sm:text-base tracking-wide text-center sm:text-left shadow-md sm:shadow-none">
-            <router-link v-for="route in $router.options.routes" :key="route.path" :to="route.path">
+        <nav :class="menuOpen ? 'block' : 'hidden'" class="absolute left-0 w-full bg-white sm:bg-none sm:relative sm:block mt-4 pt-4 pb-8 sm:mt-0 sm:pt-2 sm:pb-0 sm:flex sm:space-x-6 space-y-4 sm:space-y-0 sm:items-center text-2xl sm:text-base tracking-wide px-8 sm:px-0 shadow-md sm:shadow-none">
+            <router-link v-for="route in $router.options.routes" :key="route.path" :to="route.path" class="block">
               {{route.name}}
             </router-link>
         </nav>
